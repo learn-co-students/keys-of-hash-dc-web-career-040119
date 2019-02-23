@@ -3,7 +3,7 @@ class Hash
   def keys_of(*arguments)
     matches = []
     arguments.each do |item|
-      self.collect do |k, v|
+      self.each do |k, v|
         matches << k if v == item
       end
     end
